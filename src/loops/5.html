@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      11. Confeccione un programa que imprima las k filas del triángulo de
+      Pascal
+    </p>
+    <div style="margin-left: 20px">
+      <my-input
+        id="n0"
+        class-i="input"
+        class-l="user-label"
+        class-d="input-group"
+        onclick="refresh()"
+        >Número de filas</my-input
+      >
+    </div>
+    <center>
+      <div class="card" id="card" style="width: 75%; min-height: 75%; margin-bottom: 20px; display: none">
+        <p id="sets" style="text-align: center;"></p>
+        </div>
+      </div>
+      <button id="btn" type="submit" onclick="pascalTriangle()">Calcular</button>
+      <button type="submit" onclick="location.reload()">Limpiar</button>
+    </center>
+    <script src="app.js"></script>
+    <script src="../../app.js"></script>
+    <script src="../../components/MyInput.js"></script>
+  </body>
+</html>

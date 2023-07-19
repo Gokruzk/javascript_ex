@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="roulette.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      13. Realizar un programa que utilice la librería random. (para realizar
+      una ruleta de números aleatorios, colores o países) y realizar un juego
+    </p>
+    <div style="margin-left: 20px">
+      <my-input
+        id="n0"
+        class-i="input"
+        class-l="user-label"
+        class-d="input-group"
+        onclick="cleanInput()"
+        >Ingrese un color</my-input
+      >
+    </div>
+    <center>
+      <section class="roulette-container">
+        <div id="selector"></div>
+        <div id="roulette">
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Gris</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Café</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Rojo</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Naranja</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Verde</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Verde claro</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Negro</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Amarillo</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Rosa</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Morado</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Azul</p>
+            </div>
+          </div>
+          <div class="roulette-section">
+            <div class="roulette-section-container">
+              <p>Celeste</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="form-group" style="padding-top: 10px">
+        <label for="" id="ans"></label>
+      </div>
+      <button id="btn" class="spin" type="submit" onclick="">Iniciar</button>
+      <button id="btn" class="reset" type="submit" style="display: none;" onclick="">Reiniciar</button>
+    </center>
+    <script src="app.js"></script>
+    <script src="../../app.js"></script>
+    <script src="../../components/MyInput.js"></script>
+  </body>
+</html>

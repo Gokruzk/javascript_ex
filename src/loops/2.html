@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      8. En una gasolinera se instala un detector para controlar la cantidad de
+      litros de gasolina que va despachando el pistero. Se conoce que al
+      comenzar el turno de trabajo en el tanque de gasolina hay N litros.
+      Confeccione un programa para conocer constantemente.
+    </p>
+    <ul>
+      <li>La cantidad de vehículos atendidos.</li>
+      <li>
+        La cantidad de dinero recaudado si cada litro de gasolina especial
+        cuesta $1,25 ctvos. de dólar.
+      </li>
+      <li>Cuál es la mayor cantidad de gasolina despachada a un vehículo</li>
+    </ul>
+    <div style="margin-left: 20px">
+      <my-input
+        id="n0"
+        class-i="input"
+        class-l="user-label"
+        class-d="input-group"
+        >Litros de gasolina</my-input
+      >
+    </div>
+    <div class="form-group" style="margin: 10px 0 10px 20px">
+      <label for="" id="ans"></label>
+    </div>
+    <div class="form-group" style="margin: 10px 0 10px 20px">
+      <label for="" id="ans2"></label>
+    </div>
+    <div class="btns" style="margin-left: 20px">
+      <button id="btn" type="submit" onclick="start()">Llenar</button>
+      <button id="btn" type="submit" onclick="stop()">Detener</button>
+      <button id="calc" type="submit" style="display: none" onclick="exe1()">
+        Cerrar
+      </button>
+      <button id="btn" type="submit" onclick="location.reload()">Reiniciar</button>
+    </div>
+    <script src="app.js"></script>
+    <script src="../../app.js"></script>
+    <script src="../../components/MyInput.js"></script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      14. Un laboratorio de Física de la atmósfera trabajan N investigadores.
+      Cada uno de ellos realiza mediciones de temperatura los días lunes,
+      martes, miércoles, jueves y viernes, dichos valores varían entre 0 y 10.
+      Confeccione un programa para:
+    </p>
+    <ul>
+      <li>
+        Imprimir una tabla en la que aparezca, el nombre, la cantidad de
+        mediciones y la temperatura media de cada investigador.
+      </li>
+      <li>
+        Imprimir la temperatura media en el laboratorio y cuántas mediciones de
+        las realizadas por cada investigador fueron superiores a la media.
+      </li>
+      <li>
+        Mostrar un gráfico de barras que representen la temperatura media
+        determinada por cada investigador
+      </li>
+    </ul>
+    <center>
+      <fieldset>
+        <legend>Investigador</legend>
+        <my-input
+          id="name"
+          pattern="[A-Za-z]+"
+          class-i="input"
+          class-l="user-label"
+          class-d="input-group"
+          >Nombre</my-input
+        >
+        <fieldset>
+          <legend>Mediciones</legend>
+          <my-input
+            id="monday"
+            class-i="input"
+            class-l="user-label"
+            class-d="input-group"
+            min="0"
+            max="10"
+            >Lunes</my-input
+          >
+          <my-input
+            id="tuesday"
+            class-i="input"
+            class-l="user-label"
+            class-d="input-group"
+            min="0"
+            max="10"
+            >Martes</my-input
+          >
+          <my-input
+            id="wednesday"
+            class-i="input"
+            class-l="user-label"
+            class-d="input-group"
+            min="0"
+            max="10"
+            >Miércoles</my-input
+          >
+          <my-input
+            id="thursday"
+            class-i="input"
+            class-l="user-label"
+            class-d="input-group"
+            min="0"
+            max="10"
+            >Jueves</my-input
+          >
+          <my-input
+            id="friday"
+            class-i="input"
+            class-l="user-label"
+            class-d="input-group"
+            min="0"
+            max="10"
+            >Viernes</my-input
+          >
+        </fieldset>
+      </fieldset>
+      <fieldset id="field" style="display: none">
+        <legend>Investigadores</legend>
+        <div id="tabla-container"></div>
+      </fieldset>
+      <fieldset id="field2" style="display: none">
+        <legend>Información</legend>
+        <label id="ans" style="width: 100%"></label>
+        <fieldset>
+          <legend>Mediciones</legend>
+          <div id="tabla-container2"></div>
+        </fieldset>
+      </fieldset>
+      <div id="cnv" style="display: none; align-items: center; width: 500px; height: 500px;">
+        <canvas id="mychart"></canvas>
+      </div>
+      <button
+        style="margin: 10px 0px 30px 0"
+        id="btn"
+        type="submit"
+        onclick="exe1()"
+      >
+        Agregar investigador
+      </button>
+      <button
+        style="margin: 10px 0px 30px 0; display: none"
+        id="btn"
+        class="temp"
+        type="submit"
+        onclick="lit2()"
+      >
+        Temperatura media
+      </button>
+      <button
+        style="margin: 10px 0px 30px 0; display: none"
+        id="btn"
+        class="graph"
+        type="submit"
+        onclick="graph()"
+      >
+        Gráfico
+      </button>
+      <button
+        style="margin: 10px 0px 30px 0"
+        id="btn"
+        type="submit"
+        onclick="location.reload()"
+      >
+        Limpiar
+      </button>
+    </center>    
+    <script src="app.js"></script>
+    <script src="../../components/MyInput.js"></script>
+  </body>
+</html>

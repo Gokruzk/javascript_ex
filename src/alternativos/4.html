@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      4. Una compañía dedicada al alquiler de automóviles cobra un monto fijo de
+      $300000 para los primeros 300 km de recorrido. Para más de 300 km y hasta
+      1000 km, cobra un monto adicional de $ 15.000 por cada kilómetro en exceso
+      sobre 300. Para más de 1000 km cobra un monto adicional de $ 10.000 por
+      cada kilómetro en exceso sobre 1000. Los precios ya incluyen el 20% del
+      impuesto general a las ventas, IVA. Diseñe un programa que determine el
+      monto a pagar por el alquiler de un vehículo y el monto incluido del
+      impuesto.
+    </p>
+    <form>
+      <my-input
+        id="km"
+        class-i="input"
+        class-l="user-label"
+        class-d="input-group"
+        >Ingrese los kilómetros recorridos</my-input
+      >
+      <div class="form-group">
+        <label for="" id="ans"></label>
+      </div>
+      <button id="btn" type="submit" onclick="ej8()">Calcular monto</button>
+      <button type="submit" onclick="location.reload()">Limpiar</button>
+    </form>
+    <script src="app.js"></script>
+    <script src="../../app.js"></script>
+  </body>
+</html>

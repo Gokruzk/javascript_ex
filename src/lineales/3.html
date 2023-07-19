@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      3. Desarrolle un programa para leer un valor entero x, e interpretado este
+      valor como el número de segundos que dura un evento, calcule y muestre por
+      pantalla, cuántos días, horas, minutos y segundos representa x.
+    </p>
+    <center>
+      <fieldset style="width: 50%">
+        <div style="padding-top: 10px">
+          <my-input
+            id="n1"
+            class-i="input"
+            class-l="user-label"
+            class-d="input-group"
+            >Segundos</my-input
+          >
+        </div>
+        <div class="form-group" style="width: 100%;">
+          <label for="" id="ans"></label>
+        </div>
+      </fieldset>
+      <button
+        id="btn"
+        type="submit"
+        style="margin: 10px 0px 30px 0"
+        onclick="ej3()"
+      >
+        Calcular
+      </button>
+      <button type="submit" style="margin: 10px 0px 30px 0" onclick="location.reload()">
+        Limpiar
+      </button>
+    </center>
+    <script src="app.js"></script>
+    <script src="../../app.js"></script>
+    <script src="../../components/MyInput.js"></script>
+  </body>
+</html>

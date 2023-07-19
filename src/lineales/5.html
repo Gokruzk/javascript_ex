@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">EJERCICIOS JAVASCRIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      5.	Programa que calcula el capital final de un interés simple.
+    </p>
+    <form>
+      <div class="input-group">
+        <input type="text" required="" id="n1" class="input" />
+        <label class="user-label">Capital inicial</label>
+      </div>
+      <div class="input-group">
+        <input type="text" required="" id="n2" class="input" />
+        <label class="user-label">Tasa de interés</label>
+      </div>
+      <div class="input-group">
+        <input type="text" required="" id="n3" class="input" />
+        <label class="user-label">Tiempo (años)</label>
+      </div>
+      <div class="form-group" style="padding-top: 10px">
+        <label for="" id="ans"></label>
+      </div>
+      <button id="btn" type="submit" onclick="ej5()">Calcular</button>
+      <button type="submit" onclick="location.reload()">Limpiar</button>
+    </form>
+    <script src="app.js"></script>
+    <script src="../../app.js"></script>
+  </body>
+</html>
